@@ -1,0 +1,125 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{/*
+    fstream file3;
+    file3.open("test.abc" , ios::in | ios::out) ;
+    if(!file3)
+    {
+        cout << "Error opening file !" <<endl;
+    }
+    else
+    {
+        cout << "File seccessfully opened." <<endl;
+        char ch ;
+
+        file3.get(ch);
+        while(!file3.eof())
+        {
+            file3.seekp(-1 ,ios::cur) ;
+            switch(ch)
+            {
+                case 'a':file3.put('q');break;
+                case 'b':file3.put('w');break;
+                case 'c':file3.put('e');break;
+                case 'd':file3.put('r');break;
+                case 'e':file3.put('t');break;
+                case 'f':file3.put('y');break;
+                case 'g':file3.put('u');break;
+                case 'h':file3.put('i');break;
+                case 'i':file3.put('o');break;
+                case 'j':file3.put('p');break;
+                case 'k':file3.put('a');break;
+                case 'l':file3.put('s');break;
+                case 'm':file3.put('d');break;
+                case 'n':file3.put('f');break;
+                case 'o':file3.put('g');break;
+                case 'p':file3.put('h');break;
+                case 'q':file3.put('j');break;
+                case 'r':file3.put('k');break;
+                case 's':file3.put('l');break;
+                case 't':file3.put('z');break;
+                case 'u':file3.put('x');break;
+                case 'v':file3.put('c');break;
+                case 'w':file3.put('v');break;
+                case 'x':file3.put('b');break;
+                case 'y':file3.put('n');break;
+                case 'z':file3.put('m');break;
+                default: file3.put(ch);break;
+
+            }
+
+            file3.get(ch);
+
+
+        }
+
+    file3.close();
+
+    }
+
+
+
+*/
+
+
+
+ cout << "test decode a file : " <<endl ;
+ ifstream file;
+    file.open("test.abc" , ios::in) ;
+    if(!file)
+    {
+        cout << "Error opening file !" <<endl;
+    }
+    else
+    {
+        cout << "File seccessfully opened." <<endl;
+        char ch ;
+
+        file.get(ch);
+        while(!file.eof())
+        {
+           switch(ch)
+            {
+                case 'q':cout<<'a';break;
+                case 'w':cout<<'b';break;
+                case 'e':cout<<'c';break;
+                case 'r':cout<<'d';break;
+                case 't':cout<<'e';break;
+                case 'y':cout<<'f';break;
+                case 'u':cout<<'g';break;
+                case 'i':cout<<'h';break;
+                case 'o':cout<<'i';break;
+                case 'p':cout<<'j';break;
+                case 'a':cout<<'k';break;
+                case 's':cout<<'l';break;
+                case 'd':cout<<'m';break;
+                case 'f':cout<<'n';break;
+                case 'g':cout<<'o';break;
+                case 'h':cout<<'p';break;
+                case 'j':cout<<'q';break;
+                case 'k':cout<<'r';break;
+                case 'l':cout<<'s';break;
+                case 'z':cout<<'t';break;
+                case 'x':cout<<'u';break;
+                case 'c':cout<<'v';break;
+                case 'v':cout<<'w';break;
+                case 'b':cout<<'x';break;
+                case 'n':cout<<'y';break;
+                case 'm':cout<<'z';break;
+                default: cout<<ch;break;
+
+
+
+            }
+                file.get(ch);
+
+        }
+
+
+    }
+
+}
