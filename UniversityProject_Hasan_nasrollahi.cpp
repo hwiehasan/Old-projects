@@ -3,7 +3,7 @@
 #include <cstring>
 #include <iomanip>
 using namespace std;
-//پروژه میان ترم حسن نصرالهی
+
 void menu ();
 void student();
 void sayerEmkanat();
